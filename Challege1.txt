@@ -1,0 +1,29 @@
+Challenge #1
+
+A 3-tier environment is a common setup. Use a tool of your choosing/familiarity create these resources. Please remember we will not be judged on the outcome but more focusing on the approach, style and reproducibility.
+
+--------------------------3 Tier env----------------------------------
+Three tier Env setup:
+We need to create below resources in Azure to setup three tier env. We can use Terraform for below infrastructure provisioning. Create terraform files for below resources.
+
+-resource group with region
+-vnet(projct1, project2)
+-3 subnet(web,app,db with ip range)
+-3 nsg(web,app,db)
+-route table(web,app,db)
+-VM Public IP,
+-NIC
+-VM, VM os disk
+
+Also create separate terraform files for Provider and variables.
+
+
+Design Azure pipelines in ADO for below terraform actions:
+terraform installer -->To install terraform
+terraform init --> intialization of the working directory which consists of all configuration files
+terraform fmt--> ensure formatting is correct, if required it will format it in proper structure.
+terraform validate--> to ensure no syntax errors are there
+terraform plan --> to create an execution plan to reach a desired state, if required changes can be made in the configuration files to achieve desired state
+terraform apply--> it will make changes in the infrastructure as defined in the plan, and infrastrucure will be in desired state.
+
+In order to clean up infrastructure, need to use Terrfaorm destroy action.
