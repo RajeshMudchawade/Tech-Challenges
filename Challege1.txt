@@ -18,7 +18,7 @@ We need to create below resources in Azure to setup three tier env. We can use T
 Also create separate terraform files for Provider and variables.
 
 
-Design Azure pipelines in ADO for below terraform actions:
+Design Azure pipeline in ADO for below terraform actions:
 terraform installer -->To install terraform
 terraform init --> intialization of the working directory which consists of all configuration files
 terraform fmt--> ensure formatting is correct, if required it will format it in proper structure.
