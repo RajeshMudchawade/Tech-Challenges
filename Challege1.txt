@@ -7,7 +7,7 @@ Three tier Env setup:
 We need to create below resources in Azure to setup three tier env. We can use Terraform for below infrastructure provisioning. Create terraform files for below resources.
 
 -resource group with region
--vnet(projct1, project2)
+-vnet
 -3 subnet(web,app,db with ip range)
 -3 nsg(web,app,db)
 -route table(web,app,db)
